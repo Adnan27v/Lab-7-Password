@@ -14,7 +14,7 @@ public class Password {
 
         //String regex = "^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[~!@#$%^&()-=+_]).{8,16}$";
         //String regex = "^(?=.[a-z])(?=.[A-Z])(?=.\\d)(?=.[@$!%?&])[A-Za-z\\\d@$!%*?&]{8,16}$";
-        String regex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{8,20}$";
+        String regex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[~!@#$%^&*()-=+_]).{8,20}$";
 
         boolean validPassword = isValidPassword(password, regex);
         System.out.println("It's valid password: \n" + validPassword);
